@@ -1,0 +1,257 @@
+
+body{
+display: flex;
+align-items: center;
+flex-direction: column;
+background-image: url(/img/game.gif);
+}
+
+.game{
+display: flex;
+align-content:center;
+width: 600px;
+height: 250px;
+justify-content: space-around;
+align-self: center;
+padding-top: 200px;
+/* background-image: url(https://static3.depositphotos.com/1000715/121/i/600/depositphotos_1218245-stock-photo-wooden-interior.jpg); */
+background-image: url(/img/madeira.jpg);
+
+}
+
+li{
+    list-style: none;
+}
+
+.stick{
+    width: 8px;
+    height: 170px;
+    background-image: linear-gradient(to right, rgb(212, 31, 91) , rgb(80, 10, 10));
+    margin: 10px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    
+}
+
+.disc {
+    display: flex; 
+    height: 15px;
+    border-radius: 12px;
+    border: solid 2px rgba(0, 0, 0, 0.336);  
+    display: flex;
+    justify-content: center;
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    color: rgb(80, 10, 10);
+    
+}
+
+.destaque{
+    animation: mymove 3s infinite;    
+    position: relative;
+    background-color: coral;
+}
+@keyframes mymove {
+    
+    0%   {bottom: 0px;}
+    25%  {bottom: 40px;
+            width: 10px;}
+    50%  {background-color: rgba(248, 248, 248, 0);
+        border: solid 20px rgb(240, 155, 155);}
+    51%  {border-radius:100%;}
+    100% {bottom: 0px;}
+}
+
+
+
+#disc1{
+    width: 35px;
+    background-color: rgb(240, 155, 155);
+    
+}
+
+#disc2{
+    width: 50px;
+    background-color: rgb(236, 122, 76);
+}
+
+#disc3{
+    width: 70px;
+    background-color: rgb(245, 234, 89);
+}
+
+#disc4{
+    width: 90px;
+    background-color: rgb(146, 238, 123);
+}
+
+#disc5{
+    width: 120px;
+    background-color: rgb(100, 237, 237);
+}
+
+#disc6{
+    width: 145px;
+    background-color: rgb(77, 101, 233);
+}
+
+#disc7{
+    width: 170px;
+    background-color: rgb(137, 84, 236);
+}
+
+#disc8{
+    width: 190px;
+    background-color: rgb(211, 72, 204);
+}
+#resetButton{
+    
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(0, 217, 255) , rgb(230, 120, 203));
+}
+
+.vitoria{
+
+    display: none;
+    background-image: url(/img/parabens-parabains.gif);
+    width: 400px;
+    height: 325px;
+    color: rgb(185, 26, 138);
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 768px){
+    
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/img/game.gif);
+    }
+    
+    .game{
+    display: flex;
+    align-content:center;
+    width: 550px;
+    height: 250px;
+    justify-content: space-around;
+    align-self: center;
+    padding-top: 200px;
+    /* background-image: url(https://static3.depositphotos.com/1000715/121/i/600/depositphotos_1218245-stock-photo-wooden-interior.jpg); */
+    background-image: url(/img/madeira.jpg);
+    
+    }
+    
+    li{
+        list-style: none;
+    }
+    
+    .stick{
+        width: 8px;
+        height: 170px;
+        background-image: linear-gradient(to right, rgb(212, 31, 91) , rgb(80, 10, 10));
+        margin: 10px 80px;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        
+    }
+    
+    .disc {
+        display: flex; 
+        height: 15px;
+        border-radius: 12px;
+        border: solid 2px rgba(0, 0, 0, 0.336);  
+        display: flex;
+        justify-content: center;
+        font-family: 'Play', sans-serif;
+        font-size: 15px;
+        color: rgb(80, 10, 10);
+        
+    }
+    
+    .destaque{
+        animation: mymove 3s infinite;    
+        position: relative;
+        background-color: coral;
+    }
+    @keyframes mymove {
+        
+        0%   {bottom: 0px;}
+        25%  {bottom: 40px;
+                width: 10px;}
+        50%  {background-color: rgba(248, 248, 248, 0);
+            border: solid 20px rgb(240, 155, 155);}
+        51%  {border-radius:100%;}
+        100% {bottom: 0px;}
+    }
+    
+    
+    
+    #disc1{
+        width: 35px;
+        background-color: rgb(240, 155, 155);
+        
+    }
+    
+    #disc2{
+        width: 50px;
+        background-color: rgb(236, 122, 76);
+    }
+    
+    #disc3{
+        width: 70px;
+        background-color: rgb(245, 234, 89);
+    }
+    
+    #disc4{
+        width: 90px;
+        background-color: rgb(146, 238, 123);
+    }
+    
+    #disc5{
+        width: 120px;
+        background-color: rgb(100, 237, 237);
+    }
+    
+    #disc6{
+        width: 145px;
+        background-color: rgb(77, 101, 233);
+    }
+    
+    #disc7{
+        width: 170px;
+        background-color: rgb(137, 84, 236);
+    }
+    
+    #disc8{
+        width: 190px;
+        background-color: rgb(211, 72, 204);
+    }
+    #resetButton{
+        
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        background-image: linear-gradient(to right, rgb(0, 217, 255) , rgb(230, 120, 203));
+    }
+    
+    .vitoria{
+    
+        display: none;
+        background-image: url(/img/parabens-parabains.gif);
+        width: 400px;
+        height: 325px;
+        color: rgb(185, 26, 138);
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+}
